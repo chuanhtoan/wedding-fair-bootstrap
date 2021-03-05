@@ -12,6 +12,26 @@ img {
   width: 100%;
 }
 
+.btn-primary {
+  background-color: #D15D73;
+  border-color: #D15D73;
+}
+
+.btn-primary:hover {
+  background-color: #bd4057;
+  border-color: #bd4057;
+}
+
+.btn-secondary {
+  background-color: #C2B093;
+  border-color: #C2B093;
+}
+
+.btn-secondary:hover {
+  background-color: #bd4057;
+  border-color: #bd4057;
+}
+
 .disable {
   display: none !important;
 }

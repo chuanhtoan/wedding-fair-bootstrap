@@ -2,6 +2,7 @@
 $primary-color: #D15D73;
 $secondary-color: #C2B093;
 $background-color: #FDFAF2;
+$active-color: #bd4057;
 
 * {
     box-sizing: border-box;
@@ -13,6 +14,24 @@ html {
 
 img {
     width: 100%;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    &:hover {
+        background-color: $active-color;
+        border-color: $active-color;
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    &:hover {
+        background-color: $active-color;
+        border-color: $active-color;
+    }
 }
 
 .disable {
