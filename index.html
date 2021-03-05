@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Fair Bootstrap</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Fontawesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header__top-bar fs-5">
+            <div class="wraper">
+                <div class="container d-flex justify-content-between align-items-center p-3">
+                    <div class="header__top-bar--logo d-flex align-items-center">
+                        <h6 class="me-3">
+                            Tổ chức bởi
+                        </h6>
+                        <img src="images/ngoisao.png" class="logo__ngoisao me-3">
+                        <img src="images/shop.png" class="logo__shop me-3">
+                    </div>
+                    <div class="header__top-bar--account">
+                        <a href="#" class="me-3">Đăng nhập</a>
+                        <a href="#">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__info">
+            <div class="wraper">
+                <div class="container pt-3">
+                    <div class="header__info--desktop">
+                        <div class="header__info--fixed">
+                            <div class="row align-items-center">
+                                <nav class="col-md-5 fw-bold">
+                                    <a class="me-2 active" href="#">TRANG CHỦ</a>
+                                    <a class="me-2" href="#">GIỚI THIỆU</a>
+                                    <a class="me-2" href="#">LỊCH SỰ KIỆN</a>
+                                    <a class="me-2" href="#">HOẠT ĐỘNG</a>
+                                </nav>
+                                <div class="col-md-2"><img class="" src="images/hero-logo.png"></div>
+                                <nav class="col-md-5 text-end fw-bold">
+                                    <a class="ms-2" href="#">TRIỂN LÃM</a>
+                                    <a class="ms-2" href="#">KHUYẾN MÃI</a>
+                                    <a class="ms-2" href="#">TIN TỨC</a>
+                                    <a class="ms-2" href="#">TÀI TRỢ</a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="header__info--sticky disable">
+                            <div class="row align-items-center">
+                                <div class="col-md-2"><img class="" src="images/hero-logo.png"></div>
+                                <nav class="col-md-10 text-end fw-bold">
+                                    <a class="me-2 active" href="#">TRANG CHỦ</a>
+                                    <a class="me-2" href="#">GIỚI THIỆU</a>
+                                    <a class="me-2" href="#">LỊCH SỰ KIỆN</a>
+                                    <a class="me-2" href="#">HOẠT ĐỘNG</a>
+                                    <a class="ms-2" href="#">TRIỂN LÃM</a>
+                                    <a class="ms-2" href="#">KHUYẾN MÃI</a>
+                                    <a class="ms-2" href="#">TIN TỨC</a>
+                                    <a class="ms-2" href="#">TÀI TRỢ</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__info--hamburger">
+                        <div class="header__info--hamburger-fixed position-relative">
+                            <img src="images/hero-logo.png">
+                            <div class="float-end d-flex align-items-center">
+                                <a href="#" class="menu-btn">
+                                    <i class="fas fa-pencil-alt menu-btn__icon"></i>
+                                    <h6 class="menu-btn__text">ĐĂNG KÝ</h6>
+                                </a>
+                                <div class="hamburger__container" onclick="hamburger(this)">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    <div class="bar3"></div>
+                                </div>
+                            </div>
+                            <nav id="fixed-menu" class="menu hidden">
+                                <a href="#">TRANG CHỦ</a>
+                                <a href="#event-info">GIỚI THIỆU</a>
+                                <a href="#event-schedule">LỊCH SỰ KIỆN</a>
+                                <a href="#guest">HOẠT ĐỘNG</a>
+                                <a href="#exhibition">TRIỂN LÃM</a>
+                                <a href="#promotion">KHUYẾN MÃI</a>
+                                <a href="#news">TIN TỨC</a>
+                                <a href="#sponsor">TÀI TRỢ</a>
+                            </nav>
+                        </div>
+                        <div class="header__info--hamburger-sticky disable">
+                            <img src="images/hero-logo.png">
+                            <div class="float-end d-flex align-items-center">
+                                <a href="#" class="menu-btn">
+                                    <i class="fas fa-pencil-alt menu-btn__icon"></i>
+                                    <h6 class="menu-btn__text">ĐĂNG KÝ</h6>
+                                </a>
+                                <div class="hamburger__container" onclick="hamburger(this)">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    <div class="bar3"></div>
+                                </div>
+                            </div>
+                            <nav id="fixed-menu" class="menu hidden">
+                                <a href="#">TRANG CHỦ</a>
+                                <a href="#event-info">GIỚI THIỆU</a>
+                                <a href="#event-schedule">LỊCH SỰ KIỆN</a>
+                                <a href="#guest">HOẠT ĐỘNG</a>
+                                <a href="#exhibition">TRIỂN LÃM</a>
+                                <a href="#promotion">KHUYẾN MÃI</a>
+                                <a href="#news">TIN TỨC</a>
+                                <a href="#sponsor">TÀI TRỢ</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <section class="section event-info">
+            <div class="wraper">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img src="images/event-info.png">
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <h2 class="section__title">WEDDING FAIR</h2>
+                            <h6 class="fs-5 mb-3">"DIY - DARLING, I'M YOURS"</h6>
+                            <img class="section__title--logo mb-3" src="images/event-logo.png">
+                            <p class="fs-5 mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit non iste voluptatem minima distinctio quas error sequi obcaecati doloribus illum? Iste debitis necessitatibus culpa maiores asperiores vero sequi cum? Labore.</p>
+                            <a href="#" class="btn btn-primary">THAM GIA SỰ KIỆN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section event-schedule">
+            <div class="wraper">
+                <div class="container">
+                    <h2 class="section__title">LỊCH SỰ KIỆN</h2>
+                    <img class="section__title--logo mb-3" src="images/event-logo.png">
+                    <div class="event-schedule__date">
+                        <div class="event-schedule__date--from">
+                            <div class="event-schedule__date--circle">
+                                <span>21</span>
+                                <span>APR</span>
+                            </div>
+                            <h6 class="event-schedule__date--title">TRẢI NGHIỆM DỊCH VỤ CƯỚI</h6>
+                        </div>
+                        <div class="event-schedule__date--to">
+                            <div class="event-schedule__date--circle">
+                                <span>21</span>
+                                <span>APR</span>
+                            </div>
+                            <h6 class="event-schedule__date--title">THỬ LÀM CÔ DÂU CHÚ RỂ</h6>
+                        </div>
+                    </div>
+                    <div class="event-schedule__schedules">
+                        <div class="event-schedule__list">
+                            <div class="event-schedule__list--title">
+                                <h6 class="schedule__list--title">22/04</h6>
+                            </div>
+                            <ul class="schedule__list">
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Đón khách</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Đại hội Phượng Hoàng</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Pool party</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Đón khách</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Lễ khai mạc: Lễ Hội Phượng Hoàng</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Đại hội Phượng Hoàng</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Pool Party</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="event-schedule__list">
+                            <div class="event-schedule__list--title">
+                                <h6>22/04</h6>
+                            </div>
+                            <ul class="schedule__list">
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Đón khách</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Đại hội Phượng Hoàng</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Pool party</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Đón khách</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Lễ khai mạc: Lễ Hội Phượng Hoàng</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Đại hội Phượng Hoàng</p>
+                                </li>
+                                <li class="schedule__list--item">
+                                    <h6 class="schedule__list--title">5:30 - 7:00</h6>
+                                    <p class="schedule__list--description">Pool Party</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section guest">
+            <div class="wraper">
+                <div class="container">
+                    <h2 class="section__title">KHÁCH MỜI</h2>
+                    <img class="section__title--logo" src="images/event-logo.png">
+                    <div class="row g-5">
+                        <div class="guest__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/khachmoi.png"></a>
+                            <h6 class="guest__item--title"><a href="#">TRẦN CÔNG QUỲNH NGA</a></h6>
+                            <p>Giám đốc Trường đào tạo BIDV</p>
+                        </div>
+                        <div class="guest__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/khachmoi.png"></a>
+                            <h6 class="guest__item--title"><a href="#">TRẦN CÔNG QUỲNH NGA</a></h6>
+                            <p>Giám đốc Trường đào tạo BIDV</p>
+                        </div>
+                        <div class="guest__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/khachmoi.png"></a>
+                            <h6 class="guest__item--title"><a href="#">TRẦN CÔNG QUỲNH NGA</a></h6>
+                            <p>Giám đốc Trường đào tạo BIDV</p>
+                        </div>
+                        <div class="guest__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/khachmoi.png"></a>
+                            <h6 class="guest__item--title"><a href="#">TRẦN CÔNG QUỲNH NGA</a></h6>
+                            <p>Giám đốc Trường đào tạo BIDV</p>
+                        </div>
+                        <div class="guest__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/khachmoi.png"></a>
+                            <h6 class="guest__item--title"><a href="#">TRẦN CÔNG QUỲNH NGA</a></h6>
+                            <p>Giám đốc Trường đào tạo BIDV</p>
+                        </div>
+                        <div class="guest__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/khachmoi.png"></a>
+                            <h6 class="guest__item--title"><a href="#">TRẦN CÔNG QUỲNH NGA</a></h6>
+                            <p>Giám đốc Trường đào tạo BIDV</p>
+                        </div>
+                        <div class="guest__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/khachmoi.png"></a>
+                            <h6 class="guest__item--title"><a href="#">TRẦN CÔNG QUỲNH NGA</a></h6>
+                            <p>Giám đốc Trường đào tạo BIDV</p>
+                        </div>
+                        <div class="guest__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/khachmoi.png"></a>
+                            <h6 class="guest__item--title"><a href="#">TRẦN CÔNG QUỲNH NGA</a></h6>
+                            <p>Giám đốc Trường đào tạo BIDV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section exhibition">
+            <div class="wraper">
+                <div class="container">
+                    <h2 class="section__title">GIAN HÀNG TRIỂN LÃM</h2>
+                    <img class="section__title--logo" src="images/event-logo.png">
+                    <div class="row g-4">
+                        <div class="exhibition__item col-xl-4 col-md-6">
+                            <a href="#"><img src="images/exhibition.png"></a>
+                            <h6 class="exhibition__item--title"><a href="#">Queen Bee Luxury</a></h6>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="exhibition__item col-xl-4 col-md-6">
+                            <a href="#"><img src="images/exhibition.png"></a>
+                            <h6 class="exhibition__item--title"><a href="#">Queen Bee Luxury</a></h6>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="exhibition__item col-xl-4 col-md-6">
+                            <a href="#"><img src="images/exhibition.png"></a>
+                            <h6 class="exhibition__item--title"><a href="#">Queen Bee Luxury</a></h6>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="exhibition__item col-xl-4 col-md-6">
+                            <a href="#"><img src="images/exhibition.png"></a>
+                            <h6 class="exhibition__item--title"><a href="#">Queen Bee Luxury</a></h6>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="exhibition__item col-xl-4 col-md-6">
+                            <a href="#"><img src="images/exhibition.png"></a>
+                            <h6 class="exhibition__item--title"><a href="#">Queen Bee Luxury</a></h6>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="exhibition__item col-xl-4 col-md-6">
+                            <a href="#"><img src="images/exhibition.png"></a>
+                            <h6 class="exhibition__item--title"><a href="#">Queen Bee Luxury</a></h6>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="exhibition__item col-xl-4 col-md-6">
+                            <a href="#"><img src="images/exhibition.png"></a>
+                            <h6 class="exhibition__item--title"><a href="#">Queen Bee Luxury</a></h6>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="exhibition__item col-xl-4 col-md-6">
+                            <a href="#"><img src="images/exhibition.png"></a>
+                            <h6 class="exhibition__item--title"><a href="#">Queen Bee Luxury</a></h6>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="exhibition__item col-xl-4 col-md-6">
+                            <a href="#"><img src="images/exhibition.png"></a>
+                            <h6 class="exhibition__item--title"><a href="#">Queen Bee Luxury</a></h6>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section promotion">
+            <div class="wraper">
+                <div class="container">
+                    <h2 class="section__title">KHUYẾN MÃI MÙA CƯỚI</h2>
+                    <img class="section__title--logo" src="images/event-logo.png">
+                    <div class="row g-4">
+                        <div class="promotion__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/promotion.png"></a>
+                            <p class="promotion__item--description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="promotion__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/promotion.png"></a>
+                            <p class="promotion__item--description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="promotion__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/promotion.png"></a>
+                            <p class="promotion__item--description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="promotion__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/promotion.png"></a>
+                            <p class="promotion__item--description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="promotion__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/promotion.png"></a>
+                            <p class="promotion__item--description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="promotion__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/promotion.png"></a>
+                            <p class="promotion__item--description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="promotion__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/promotion.png"></a>
+                            <p class="promotion__item--description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                        <div class="promotion__item col-xl-3 col-md-4 col-sm-6">
+                            <a href="#"><img src="images/promotion.png"></a>
+                            <p class="promotion__item--description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <div class="mark"><i class="fas fa-map-marker-alt mark-icon"></i>Hồ Chí Minh</div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        <a href="#" class="btn btn-secondary" style="width: 150px;">
+                            XEM THÊM
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section news">
+            <div class="wraper">
+                <div class="container">
+                    <h2 class="section__title">TIN TỨC LIÊN QUAN</h2>
+                    <img class="section__title--logo" src="images/event-logo.png">
+                    <div class="row g-5">
+                        <div class="col-xl-6 col-md-12">
+                            <div class="news__big">
+                                <img src="images/news.png">
+                                <h6 class="news__title">WEDDING FAIR 2018 - HỘI CHỢ CƯỚI 2018</h6>
+                                <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veniam dicta dolorem itaque, obcaecati consectetur facere enim deleniti, perferendis accusantium nam, numquam repudiandae dolorum sunt sit rem ipsam totam molestias?</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-12">
+                            <div class="news__small">
+                                <img src="images/news-small.png">
+                                <div>
+                                    <h6 class="news__title">WEDDING FAIR 2018 - HỘI CHỢ CƯỚI 2018</h6>
+                                    <p class="news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellendus quis repellat necessitatibus alias exercitationem iure eveniet id aperiam ducimus.</p>
+                                </div>
+                            </div>
+                            <div class="news__small">
+                                <img src="images/news-small.png">
+                                <div>
+                                    <h6 class="news__title">WEDDING FAIR 2018 - HỘI CHỢ CƯỚI 2018</h6>
+                                    <p class="news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellendus quis repellat necessitatibus alias exercitationem iure eveniet id aperiam ducimus.</p>
+                                </div>
+                            </div>
+                            <div class="news__small">
+                                <img src="images/news-small.png">
+                                <div>
+                                    <h6 class="news__title">WEDDING FAIR 2018 - HỘI CHỢ CƯỚI 2018</h6>
+                                    <p class="news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellendus quis repellat necessitatibus alias exercitationem iure eveniet id aperiam ducimus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sponsor">
+            <div class="wraper">
+                <div class="container">
+                    <h2 class="section__title">TÀI TRỢ</h2>
+                    <img class="section__title--logo" src="images/event-logo.png">
+                    <div class="sponsor__item d-flex align-items-center">
+                        <h6 class="sponsor__title">
+                            ĐƠN VỊ TỔ CHỨC
+                        </h6>
+                        <div class="d-flex flex-wrap">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                        </div>
+                    </div>
+                    <div class="sponsor__item d-flex align-items-center">
+                        <h6 class="sponsor__title">
+                            TÀI TRỢ KIM CƯƠNG
+                        </h6>
+                        <div class="d-flex flex-wrap">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                        </div>
+                    </div>
+                    <div class="sponsor__item d-flex align-items-center">
+                        <h6 class="sponsor__title">
+                            TÀI TRỢ VÀNG
+                        </h6>
+                        <div class="d-flex flex-wrap">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                        </div>
+                    </div>
+                    <div class="sponsor__item d-flex align-items-center">
+                        <h6 class="sponsor__title">
+                            TÀI TRỢ ĐỒNG
+                        </h6>
+                        <div class="d-flex flex-wrap">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                            <img class="sponsor__image" src="images/sponsor.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer>
+        <section class="contact">
+            <div class="wraper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12 ps-5">
+                            <h2 class="section__title text-start">LIÊN HỆ</h2>
+                            <img class="section__title--logo ms-0" src="images/event-logo.png">
+                            <h6 class="fs-5 mb-3">Triển lãm mua sắm cưới Wedding Fair 2018</h6>
+                            <ul class="fs-6">
+                                <li class="mb-3">
+                                    <i class="fas fa-map-marker-alt contact__icon"></i>
+                                    <span class="text-dark ms-1">Rex Hotel Saigon</span>
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-phone-alt contact__icon"></i>
+                                    <span class="text-dark ms-1">+84 123 123 1234</span>
+                                </li>
+                                <li class="mb-3">
+                                    <i class="far fa-envelope-open contact__icon"></i>
+                                    <span class="text-dark ms-1">wedingfair@gmail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-7 d-md-block d-sm-none pe-0">
+                            <img class="contact__map" src="images/map.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="wraper">
+                <div class="container">
+                    <div class="row align-items-center p-4">
+                        <div class="col-md-3 col-sm-5 d-flex align-items-center">
+                            <a class="logo__ngoisao me-md-3 me-sm-1" href="#"><img src="images/ngoisao.png" alt="ngoisao"></a>
+                            <a class="logo__shop" href="#"><img src="images/shop.png" alt="shop"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-1 text-ceter">
+                            <p class="d-md-block d-sm-none ">@ Ngoisao.net giữ bản quyền nội dung trên website này.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-5 text-end">
+                            <a class="fs-5" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="fs-5 ms-md-3 ms-sm-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="fs-5 ms-md-3 ms-sm-1" href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Fixed Button -->
+    <a href="#" class="fixed-btn">
+        <i class="fas fa-pencil-alt fixed-btn__icon"></i>
+        <h6 class="fixed-btn__text">ĐĂNG KÝ NHẬN VÉ MỜI</h6>
+    </a>
+
+    <!-- Overlay -->
+    <div id="overlay" class="hidden"></div>
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+    <!-- Custome JS -->
+    <script src="main.js"></script>
+</body>
+</html>
