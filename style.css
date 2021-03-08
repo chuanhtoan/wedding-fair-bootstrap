@@ -487,6 +487,8 @@ img {
           align-items: center;
   color: white;
   z-index: 9999;
+  -webkit-transition: all ease-in-out .25s;
+  transition: all ease-in-out .25s;
 }
 
 .fixed-btn__icon {
@@ -498,6 +500,11 @@ img {
 .fixed-btn__text {
   font-size: 15px;
   line-height: 1.2;
+}
+
+.fixed-btn:hover {
+  color: white;
+  background-color: #bd4057;
 }
 
 .menu-btn {

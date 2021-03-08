@@ -416,6 +416,7 @@ img {
     align-items: center;
     color: white;
     z-index: 9999;
+    transition: all ease-in-out .25s;
     &__icon {
         border-right: 1px solid white;
         padding: 4px 8px;
@@ -424,6 +425,10 @@ img {
     &__text {
         font-size: 15px;
         line-height: 1.2;
+    }
+    &:hover {
+        color: white;
+        background-color: $active-color;
     }
 }
 
