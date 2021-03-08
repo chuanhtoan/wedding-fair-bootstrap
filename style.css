@@ -647,6 +647,9 @@ img {
   .event-schedule__list {
     margin: 0;
   }
+  .event-schedule .wraper::after {
+    left: 0;
+  }
 }
 
 @media all and (max-width: 600px) {

@@ -566,6 +566,9 @@ img {
         &__list {
             margin: 0;
         }
+        .wraper::after {
+            left: 0;
+        }
     }
 }
 
